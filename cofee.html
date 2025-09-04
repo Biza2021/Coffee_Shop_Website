@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee On Wheels</title>
+  <style>
+    a {
+      text-decoration: none;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      color: #333;
+    }
+    header {
+      background: #4b2e2e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    .hero h2 {
+      font-size: 3em;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .menu-item {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .menu-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .menu-item h3 {
+      margin: 10px 0;
+    }
+    /* About Owner Section */
+    .about-owner {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .info-box {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      text-align: center;
+    }
+    .info-box img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .info-box:hover img {
+      transform: scale(1.05);
+    }
+    .info-text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(75, 46, 46, 0.9);
+      color: white;
+      padding: 15px;
+      font-size: 14px;
+      border-radius: 0 0 10px 10px;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: all 0.3s ease;
+    }
+    .info-box:hover .info-text {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    footer {
+      background: #4b2e2e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>☕ Quick Coffee</h1>
+    <p>Your daily brew, served fresh on the road</p>
+  </header>
+
+  <div class="hero">
+    <h2>Fresh Coffee Anytime, Anywhere</h2>
+  </div>
+
+  <section>
+    <h2>About Us</h2>
+    <p>We are a  coffee shop bringing fresh brews to your neighborhood. Whether you’re rushing to work or taking a break, we’ve got your favorite coffee ready on the go!</p>
+
+    <div class="about-owner">
+      <div class="info-box">
+        <img src="owner.jpeg" alt="The Owner">
+        <p style="margin-top:10px;">Our Barista</p>
+        <div class="info-text">
+          <strong>Owner: Mohammed </strong><br>
+          10+ years of barista experience.<br>
+          Passionate about creating unique coffee blends on the go.
+        </div>
+      </div>
+
+      <div class="info-box">
+        <img src="place.jpeg" alt="The Place">
+        <p style="margin-top:10px;">Our Place</p>
+        <div class="info-text">
+          <strong>Our Coffee Car</strong><br>
+          A cozy café bringing fresh coffee to your street.<br>
+          Always nearby, always warm.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Our Menu</h2>
+    <a href="menu.html">click for our menu</a>
+    <div class="menu">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>Strong and bold</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Latte">
+        <h3>Latte</h3>
+        <p>Creamy and smooth</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Cappuccino">
+        <h3>Cappuccino</h3>
+        <p>Perfect balance of milk and foam</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><a href="https://www.google.com/maps/place/Quick+coffee+to+go+%E2%98%95%EF%B8%8F/@33.970937,-6.8247997,17z/data=!3m1!4b1!4m6!3m5!1s0xda71324c6d1fb01:0xaca42ade3846558b!8m2!3d33.9709326!4d-6.8222248!16s%2Fg%2F11yj2vmd2l?entry=ttu&g_ep=EgoyMDI1MDgzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">📍 Find us on the road </a>| 📞 +212 613 222 270</p>
+    <p>&copy; 2025 Quick Coffee</p>
+  </footer>
+
+</body>
+</html>
